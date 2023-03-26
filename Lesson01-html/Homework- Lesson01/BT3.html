@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BT3</title>
+    <title>[Trang-nhom2] BT3</title>
 </head>
 <body>
     <form>
-        <label>Enter name:</label>
-        <input type="text" />
-        <br/>
-        <label>Enter password:</label>
-        <input type= />
+        <label for="name">Enter name:</label>
+        <input id="name" type="text" name="Input_names">
+        <br>
+        <label for="pass">Enter password:</label>
+        <input id="pass" type="password" name="Input_pass" style="border-color:rgba(0, 183, 255, 0.577);">
+        <br>
+        <label for="em">Enter Email:</label>
+        <input id="em" type="email" name="Input_emails">
+        <br>
+        <label>Enter Gender:</label>
+        <input id="m" type="radio" name="Input_gender" value="male">
+        <label for="m">male</label>
+        <input id="f" type="radio" name="Input_gender" value="female">
+        <label for="f">female</label>
+        <br>
+        <label for="nation">Select Country:</label>
+        <select id="nation">
+            <option name="Input_country" value="India" selected>india</option>
+            <option name="Input_country" value="Vietnam">vietnam</option>
+        </select>
+        <br>
+        <input type="submit" value="register">
     </form>
 </body>
 </html>

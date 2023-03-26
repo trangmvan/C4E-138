@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Trang-nhom2] BT6</title>
+</head>
+<body>
+    <header>
+        <h1>Test JavaScript Form Validation</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="name">Name</label> <span style="color:red">*</span>
+            <input id="name" type="text" name="Input_names" style="border-style: inset;border-color: red;">
+            <span style="color:red">Please enter your name!</span>
+            <br>
+            <br>
+            <label for="add">Address</label>
+            <input id="add" type="text" name="Input_addresses" style="border-style: inset;border-color:white">
+            <br>
+            <br>
+            <label for="zip">Zip Code</label> <span style="color:red">*</span>
+            <input id="zip" type="text" name="Input_zipcodes" style="border-style: inset;border-color:white">
+            <br>
+            <br>
+            <label for="nation">Country</label> <span style="color:red">*</span>
+            <select id="nation" type="text" style="border-style: inset;border-color:white">
+                <option name="Input_countries" value="none">Please select...</option>
+                <option name="Input_countries" value="vietnam">Vietnam</option>
+                <option name="Input_countries" value="usa">USA</option>
+            </select>
+            <br>
+            <br>
+            <label>Gender</label> <span style="color:red">*</span>
+            <input id="m" type="radio" name="Input_gender" value="male">
+            <label for="m">Male</label>
+            <input id="f" type="radio" name="Input_gender" value="female">
+            <label for="f">Female</label>
+            <br>
+            <br>
+            <label>Preferences</label> <span style="color:red">*</span>
+            <input id="r" type="checkbox" name="Preferences" value="red">
+            <label for="r">Red</label>
+            <input id="g" type="checkbox" name="Preferences" value="green">
+            <label for="g">Green</label>
+            <input id="b" type="checkbox" name="Preferences" value="blue">
+            <label for="b">Blue</label>
+            <br>
+            <br>
+            <label for="tel">Phone</label><span style="color:red">*</span>
+            <input id="tel" type="tel" name="Input_phone" style="border-style: inset;border-color:white">
+            <br>
+            <br>
+            <label for="em">Email</label><span style="color:red">*</span>
+            <input id="em" type="email" name="Input_emails" style="border-style: inset;border-color:white">
+            <br>
+            <br>
+            <label for="pass">password (6-8 characters)</label><span style="color:red">*</span>
+            <input id="pass" type="password" name="Input_pass" style="border-style: inset;border-color: white">
+            <br>
+            <br>
+            <label for="verify">Verify password</label><span style="color:red">*</span>
+            <input id="verify" type="password" name="Input_verify_pass" style="border-style: inset;border-color: white">
+            <br>
+            <br>
+            <input type="submit" value="SEND">
+            <input type="reset" value="CLEAR">
+        </form>
+    </main>
+</body>
+</html>
+
