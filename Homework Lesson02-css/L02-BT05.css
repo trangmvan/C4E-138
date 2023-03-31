@@ -1,0 +1,29 @@
+body {
+    font-family: arial;
+    margin: 20px;
+}
+
+h2 {
+    
+}
+.color_gray {
+    background-color: rgb(207, 209, 209);
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+}
+
+.color_gray p {
+    color: white;
+    font-size: 55px;
+}
+
+.blue_button {
+    display: inline-block;
+    background-color: rgb(13, 173, 173);
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 700;
+}
