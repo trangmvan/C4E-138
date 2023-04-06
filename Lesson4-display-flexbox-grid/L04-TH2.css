@@ -1,0 +1,316 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    grid-column: 1 / span 3;
+
+    background-color: rgb(248, 233, 162);
+    border: 1px solid rgb(209, 181, 39);
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+.footer {
+    grid-column: 1 / span 3;
+
+    background-color: rgb(248, 233, 162);
+    border: 1px solid rgb(209, 181, 39);
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+/* First layout */
+
+.container-1 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px 350px;
+    margin: 30px 10px;
+
+}
+
+.container-1 .sidebar {
+    background-color: rgb(248, 191, 186);
+    border: 1px solid rgb(208, 126, 159);
+    text-align: center;
+    font-size: 25px;
+    line-height: 350px;
+}
+
+.container-1 .content {
+    background-color: rgb(228, 248, 186);
+    border: 1px solid rgb(102, 151, 46);
+    text-align: center;
+    font-size: 25px;
+    line-height: 350px;
+}
+
+/* Second layout */
+
+.container-2 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 50px 350px 50px;
+    margin: 30px 10px;
+}
+
+.container-2 .sidebar {
+    background-color: rgb(248, 191, 186);
+    border: 1px solid rgb(208, 126, 159);
+    text-align: center;
+    font-size: 25px;
+    line-height: 350px;
+}
+
+.container-2 .content {
+    background-color: rgb(228, 248, 186);
+    border: 1px solid rgb(102, 151, 46);
+    text-align: center;
+    font-size: 25px;
+    line-height: 350px;
+}
+
+/* Third layout */
+
+.container-3 {
+    display: grid;
+    gap:10px;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 50px 200px 200px 210px;
+    grid-template-areas: 
+    "header header header"
+    'left-sidebar feature-1 feature-2'
+    'left-sidebar feature-3 feature-4'
+    'left-sidebar feature-5 feature-5'
+    ;
+    margin: 30px 10px;
+}
+
+    /* grid area distribution */
+.container-3 .header {
+    grid-area: header;
+}
+.container-3 .sidebar {
+    grid-area: left-sidebar;
+}
+.container-3 .feature-1 {
+    grid-area: feature-1;
+}
+.container-3 .feature-2 {
+    grid-area: feature-2;
+}
+.container-3 .feature-3 {
+    grid-area: feature-3;
+}
+.container-3 .feature-4 {
+    grid-area: feature-4;
+}
+.container-3 .feature-5 {
+    grid-area: feature-5;
+}
+
+
+    /*decorate boxes */
+
+.container-3 .sidebar {
+    background-color: rgb(248, 191, 186);
+    border: 1px solid rgb(208, 126, 159);
+    text-align: center;
+    font-size: 25px;
+    line-height: 630px;
+}
+
+.container-3 .feature {
+    background-color: rgb(228, 248, 186);
+    border: 1px solid rgb(102, 151, 46);
+    text-align: center;
+    font-size: 25px;
+    line-height: 200px;
+}
+
+.container-3 .feature-1 , .container-3 .feature-3 {
+    margin-right:20px;
+}
+
+.container-3 .feature-2 , .container-3 .feature-4 {
+    margin-left:20px;
+}
+
+.container-3 .feature-5 {
+    line-height:210px !important;
+}
+
+/* Fourth layout */
+.container-4 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 50px 170px 130px 170px 50px;
+    grid-template-areas:
+    'header header'
+    'intro intro'
+    'features features'
+    'image-box login-form'
+    'footer footer'
+    ;
+}
+
+     /* grid areas distribution */
+.container-4 .header {
+    grid-area: header;
+}
+.container-4 .intro {
+    grid-area: intro;
+}
+.container-4 .features {
+    grid-area: features;
+}
+.container-4 .image-box {
+    grid-area: image-box;
+}
+.container-4 .login-form {
+    grid-area: login-form;
+}
+
+.container-4 .footer {
+    grid-area: footer;
+}
+
+.container-4 .features {
+    display: flex;
+    gap:1rem;
+}
+.container-4 .feature {
+    flex-grow: 1;
+}
+
+    /* decorate boxes */
+.container-4 .intro {
+    background-color: rgb(228, 248, 186);
+    border: 1px solid rgb(102, 151, 46);
+    text-align: center;
+    font-size: 25px;
+    line-height: 170px;
+}
+
+.container-4 .feature {
+    background-color: rgb(248, 191, 186);
+    border: 1px solid rgb(208, 126, 159);
+    text-align: center;
+    font-size: 25px;
+    line-height: 130px;
+}
+
+.container-4 .image-box {
+    background-color: rgb(255, 243, 107);
+    border: 1px solid rgb(143, 141, 3);
+    text-align: center;
+    font-size: 25px;
+    line-height: 170px;
+}
+
+.container-4 .login-form {
+    background-color: rgb(255, 243, 107);
+    border: 1px solid rgb(143, 141, 3);
+    text-align: center;
+    font-size: 25px;
+    line-height: 170px;
+}
+
+/* Fifth layout */
+
+.container-5 {
+    display: grid;
+    gap: 10px;
+    margin: 30px 10px;
+    grid-template-columns: 2fr 0.5fr 2.5fr;
+    grid-template-rows: 50px 130px 260px 260px;
+    grid-template-areas:
+    'header header header'
+    'features features features'
+    'images images images'
+    'content-box content-box content-box'
+}
+    /* grid areas distribution */
+
+.container-5 .header {
+    grid-area: header;
+}
+.container-5 .features {
+    grid-area: features;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    
+}
+
+.container-5 .images {
+    grid-area: images;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.container-5 .content-box {
+    grid-area: content-box;
+    display: grid;
+    gap:10px;
+    margin-top: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 1fr;    
+}
+.container-5 .content-1 {
+    grid-row: 1/span 2;
+}
+
+
+    /* decorate boxes */
+.container-5 .feature {
+    background-color: rgb(248, 191, 186);
+    border: 1px solid rgb(208, 126, 159);
+    text-align: center;
+    font-size: 25px;
+    line-height: 65px;
+}
+
+.container-5 .image-box {
+    background-color: rgb(255, 243, 107);
+    border: 1px solid rgb(143, 141, 3);
+    text-align: center;
+    font-size: 25px;
+    line-height: 130px;
+}
+
+.container-5 .content-1 {
+    background-color: rgb(255, 243, 107);
+    border: 1px solid rgb(143, 141, 3);
+    text-align: center;
+    font-size: 25px;
+    line-height: 260px;
+}
+
+.container-5 .content-2 {
+    background-color: rgb(248, 191, 186);
+    border: 1px solid rgb(208, 126, 159);
+    text-align: center;
+    font-size: 25px;
+    line-height: 166px;
+}
+
+.container-5 .content-3 {
+    background-color: rgb(244, 167, 79);
+    border: 1px solid rgb(227, 126, 18);
+    text-align: center;
+    font-size: 25px;
+    line-height: 84px;
+}
+
+
+
+
+
+

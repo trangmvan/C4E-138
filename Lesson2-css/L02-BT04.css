@@ -5,26 +5,31 @@ header {
 }
 
 img {
+    position: relative;
     opacity: 20%;
     width: 100%;
     height: 300px;
-    position: relative;
     object-fit: cover;
 }
 
 .box {
     position: absolute;
     top: 80px;
-    left: 26%;
+    left: 23%;
     text-align: center;
     color: white;
 }
 
-input[type="button"] {
+a {
     background-color:rgb(204, 91, 16);
     width: 75%;
-    padding: 7px 0px 7px 0px;
+    padding: 9px 15px 9px 15px;
     border: none;
     color: white;
     margin-top: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color:rgb(125, 121, 118)
 }

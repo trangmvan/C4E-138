@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="L04-figma.css">
+    <title>L04-Figma-flexbox-grid</title>
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <i class="fa-solid fa-bars"></i>
+            <p>Social</p>
+        </div>
+        <form>
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="search" type="text" placeholder="Search">
+        </form>
+        <div class="nav-right">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-regular fa-heart"></i>
+            <img src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/portrait-photography/CODERED_B1_portrait_photography-P4a_438x447.jpg.img.jpg" width="25px">
+        </div>
+    </header>
+    <main>
+        <div class="tab-speakers">
+            <i class="fa-solid fa-chevron-left fa-xs"></i>
+            <p>Speakers</p>
+        </div>
+
+        <div class="speakers-grid">
+            <div class="sub-grid Olivia-Little">
+                <div class="pic-box">
+                    <img src="https://images.squarespace-cdn.com/content/v1/53b599ebe4b08a2784696956/1495768175862-5D4TY1REJYFS7KBBKBUS/professional-photographer-01.jpg">
+                    <div class="message-call-videocall">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-message fa-xs" style="color: #ffffff"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-microphone fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-video fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                        <h5>Olivia Little</h5>
+                        <h6>UI / UX Designer</h6>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Seattle, USA</p>
+                        </div>
+                        <div class="languages">
+                            Speaks: English,
+                            <p>Spanish</p> 
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-paper-plane fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-linkedin-in fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-dribbble fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-behance fa-xs" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-grid Julia-Kelley">
+                <div class="pic-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCX5TPkA7ppAWYNhRjTmIQFBHk77D4FtxaQw&usqp=CAU">
+                    <div class="message-call-videocall">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-message fa-xs" style="color: #ffffff"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-microphone fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-video fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                        <h5>Julia Kelley</h5>
+                        <h6>Product Designer</h6>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot fa-xs"></i>
+                            <p>Oslo, Canada</p>
+                        </div>
+                        <div class="languages">
+                            Speaks: English,
+                            <p>Portuguese</p> 
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-paper-plane fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-linkedin-in fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-dribbble fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-behance fa-xs" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-grid Kenneth-Harmon">
+                <div class="pic-box">
+                    <img src="https://i.pinimg.com/736x/2e/0a/f8/2e0af89dac4dbf2aae5bbca791adb4c6.jpg">
+                    <div class="message-call-videocall">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-message fa-xs" style="color: #ffffff"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-microphone fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-video fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                        <h5>Kenneth Harmon</h5>
+                        <h6>Visual Designer</h6>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot fa-xs"></i>
+                            <p>Phoenix, USA</p>
+                        </div>
+                        <div class="languages">
+                            Speaks: English
+                            <p></p> 
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-paper-plane fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-linkedin-in fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-dribbble fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-behance fa-xs" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-grid Brian-Fisher">
+                <div class="pic-box">
+                    <img src="https://ninaparkerstudios.com/wp-content/uploads/2019/02/Curran-Ethridge-Headshots-NinaParkerStudios-5982-WEB.jpg">
+                    <div class="message-call-videocall">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-message fa-xs" style="color: #ffffff"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-microphone fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-video fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                        <h5>Brian Fisher</h5>
+                        <h6>Motion Designer</h6>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot fa-xs"></i>
+                            <p>Austin, USA</p>
+                        </div>
+                        <div class="languages">
+                            Speaks: English, Polish
+                            <p>Russian</p> 
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-paper-plane fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-linkedin-in fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-dribbble fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-behance fa-xs" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-grid Jonas-Jacobs">
+                <div class="pic-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT621hI0pt0OX-fE9QLrckPwv0xj29k7NPYSL41RXXSnTlKRjhIqeJI9wX4eBtXAlkk-ss&usqp=CAU">
+                    <div class="message-call-videocall">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-message fa-xs" style="color: #ffffff"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-microphone fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-video fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                        <h5>Jonas Jacobs</h5>
+                        <h6>Information Architect</h6>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot fa-xs"></i>
+                            <p>San Jose, USA</p>
+                        </div>
+                        <div class="languages">
+                            Speaks: English
+                            <p></p> 
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-paper-plane fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-linkedin-in fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-dribbble fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-behance fa-xs" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-grid Joan-Glenn">
+                <div class="pic-box">
+                    <img src="https://i.pinimg.com/236x/43/ff/6f/43ff6fde63fa8ab0823ac83fe037c005.jpg">
+                    <div class="message-call-videocall">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-message fa-xs" style="color: #ffffff"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-microphone fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-solid fa-video fa-xs" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                        <h5>Joan Glenn</h5>
+                        <h6>Interaction Designer</h6>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot fa-xs"></i>
+                            <p>Houston, USA</p>
+                        </div>
+                        <div class="languages">
+                            Speaks: English
+                            <p></p> 
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="circle">
+                            <i class="icon fa-solid fa-paper-plane fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-linkedin-in fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-dribbble fa-xs" style="color: #000000;"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="icon fa-brands fa-behance fa-xs" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

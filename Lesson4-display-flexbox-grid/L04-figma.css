@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 800px;
+    margin: 20px;
+    margin-block: 10px;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    /* nav-left */
+    .nav-left {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+        font-family: consolas;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    /* search bar */
+
+    form {
+        position: relative;
+        width: 50%;
+        height: 25px;
+    }
+
+    input[type="search"] {
+        width: 100%;
+        height: 100%;
+        padding: 2px 20px 2px;
+        position: relative;
+        background: transparent;
+        z-index: 0;
+        border-radius: 5px;
+        border: 1.5px solid rgba(119, 110, 110, 0.534);
+    }
+
+    form button {
+        z-index: 1;
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+        opacity: 50%;
+    }
+
+    form button:hover {
+        cursor: pointer;
+    }
+
+    /* nav-right */
+
+    .nav-right {
+        display: flex;
+        gap:15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img {
+        border-radius: 50%;
+    }
+
+/* Main */
+/* Speakers tab-name */
+    
+    .tab-speakers {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        margin-block: 30px;
+    }
+   .tab-speakers p{
+        font-weight: bold;
+        font-size: 35px;
+   }
+/* Speakers grid */
+.speakers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Sub-grids */
+    .sub-grid {
+        font-family: sans-serif;
+        height:14rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 10px;
+    }
+    .Olivia-Little {
+        background-color: #FFD38A;
+    }
+    .Julia-Kelley {
+        background-color:#ABE1FF;
+    }
+    .Kenneth-Harmon {
+        background: #D6E7FF;
+    }
+    .Brian-Fisher {
+        background: #ADFFE6;
+    }
+    .Jonas-Jacobs {
+        background: #FFC5A0;
+    }
+    .Joan-Glenn {
+        background: #A5FF96;
+    }
+
+
+    /* pic-box */
+    .pic-box {
+        border-radius: 10px;
+        padding:5px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #E2E2E2;
+    }
+   .sub-grid img {
+        object-fit: cover;
+        height: 175px;
+        width: 175px;
+        border-radius: 10%;
+   }
+   .pic-box .circle {
+    border-radius: 50%;
+    background-color: black;
+    width: 22px;
+    height: 22px;
+    position: relative;
+    transform: scale(1.2);
+   
+   }
+
+   .pic-box .circle .icon {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   }
+
+   .message-call-videocall {
+    display: flex;
+    gap: 20px;
+    align-self: flex-start;
+    }
+
+    /* info-box */
+    
+    .info-box {
+        margin: 15px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info-box .circle {
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        width: 22px;
+        height: 22px;
+        position: relative;
+        transform: scale(1.2);
+       }
+    .info-box .circle .icon {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .info h5{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .info h6{
+        font-size: 13px;
+    }
+
+    .info-box p , .languages {
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .languages {
+       position: relative;    }
+
+
+   .languages p{
+        position: absolute;
+        top: 100%;
+        left: 31%;
+   }
+
+    .location {
+        display: flex;
+        align-items: center;
+        gap:5px;
+        font-size: 10px;
+    }
+
+    .contact-info {
+        display: flex;
+        gap: 20px;
+    }
