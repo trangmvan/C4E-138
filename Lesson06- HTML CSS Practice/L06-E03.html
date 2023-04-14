@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="L06-E03.css">
+    <title>L06-E03</title>
+</head>
+<body>
+    <Header>
+        <div class="header-left">
+            <div class="circle"></div>
+            <h2>My Shop</h2>
+        </div>
+        <div class="header-right">
+            <div>Home</div>
+            <div>About us</div>
+            <div>Contact</div>
+            <button class="btn btn-blue">My Cart (0)</button>
+        </div>
+    </Header>
+    <main>
+        <div class="your-information">
+            <h3>Your information</h3>
+            <form>
+                <div class="name-phone-address">
+                    <div>
+                    <label for="fname">Full name<span class="font-red">*</span></label>
+                    <input id="fname" type="text" name="fname" class="transparent">
+                    </div>
+                    <div>
+                        <label for="phone-number">Phone number<span class="font-red">*</span></label>
+                        <input id="phone-number" type="tel" name="phone-number"class="transparent">
+                    </div>
+                    <div>
+                        <label for="address">Address<span class="font-red">*</span></label>
+                        <input id="address" type="text" name="address"class="transparent">
+                    </div>
+                </div>
+                <div class="payment-method">
+                    <div>Payment method
+                        <span class="font-red">*</span>
+                    </div>
+                    <form>
+                        <div class="border-gray">
+                        <input id="credit-card" type="radio" name="payment-method" value="credit-card">
+                        <label for="credit-card">Credit card</label>
+                        </div>
+                        <div class="border-gray">
+                        <input id="your-bank" type="radio" name="payment-method" value="your-bank">
+                        <label for="your-bank">Your bank</label>
+                        </div>
+                        <div class="border-gray">
+                        <input id="momo" type="radio" name="payment-method" value="momo">
+                        <label for="momo">Credit card</label>
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+        <div class="cart">
+            <h3>Cart</h3>
+            <div class="cart-items">
+                <div class="cart-item border-gray">
+                    <div class="cart-item-info">
+                        <i class="fa-solid fa-square-check" style="color: #49c27d;"></i>
+                        <div class="img">IMAGE</div>
+                        <div class="cart-item-name-selection">
+                            <h4>Lorem ipsum dolor</h4>
+                            <div class="cart-item-selection">
+                                <button class="btn btn-green">Blue</button><button class="btn btn-green">Classic</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-total">
+                        <div>
+                            <input class="btn" min="0" placeholder="2" type="number">
+                            <div class="font-bold">Total: $210.00</div>
+                        </div>
+                        <button class="btn btn-red">Remove</button>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cart-item border-gray"></div>
+                <div class="cart-item border-gray"></div>
+                <div class="cart-item border-gray"></div>
+                <button class="btn btn-blue">Submit Order</button>
+            </div>
+        </div>
+    </main>
+    <Footer>
+        <h2>My Shop</h2>
+        <div class="contact-info">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>22C Sommewhere, Ha Noi</div>
+            </div>
+            <div class="phone-number">
+                <i class="fa-solid fa-phone"></i>
+                <div>0987654321</div>
+            </div>
+        </div>  
+    </Footer>
+</body>
+</html>
