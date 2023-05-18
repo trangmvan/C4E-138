@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h3,h4{
+    font-family: 'Merriweather', serif;
+}
+
+body{
+    height: 830px;
+    width: 1213px;
+    padding: 100px;
+    color:#151B32;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width:1013px;
+    height:128px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+main {
+    height:432px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header h3{
+    font-weight: bold;
+    font-size: 32px;
+}
+/* nav-bar */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+/* search section */
+
+.search-bar{
+    position: relative;
+    width: 327px;
+    height:64px;
+    display: flex;
+    gap:8px;
+    border:1px solid rgba(0, 0, 0, 0.244);
+    border-radius: 4px;
+}
+.btn-search{
+    background:transparent;
+    border: none;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:10px;
+}
+input[type="search"]{
+    padding-left:50px;
+    border: none;
+  }
+
+input[type="search"]::placeholder{
+    font-size: 16px;
+}
+
+/* nav-section */
+.section--nav{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.chosen-nav{
+    background-color: #849FFF;
+    padding:15px;
+    color: white;
+    border-radius: 8px;
+}
+
+/* cards */
+.card{
+    height:208px;
+    width: 327px;
+    border-radius: 16px;
+    padding: 24px;
+    background-color: #FBFCFF;
+    display: flex;
+    gap:16px;
+}
+.circle{
+    width:97px;
+    height:97px;
+    border-radius: 50%;
+}
+.personal-info{
+    padding-top:20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.personal-info h4{
+    font-size: 18px;
+    font-weight: 900;
+}
+.name-location{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+}
+.interests{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.interest{
+    border-radius:10px;
+    padding:5px;
+    border: 1px solid #BFC8E6;
+    color:#516FD4
+}

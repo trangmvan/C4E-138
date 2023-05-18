@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="C4E-Test-ver3-BT3.css">
+    <title>BT3</title>
+</head>
+
+<body>
+    <header>
+        <h3>Users</h3>
+        <div class="nav-bar">
+            <div class="section--search">
+                <div class="search-bar">
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #151B32;"></i>
+                    </button>
+                    <input type="search" placeholder="Search users">
+                </div>
+            </div>
+            <div class="section--nav">
+                <div>Reputation</div>
+                <div class="chosen-nav">New users</div>
+                <div>Voters</div>
+                <div>Editors</div>
+                <div>Moderators</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 1st card -->
+        <div class="card">
+            <img class="circle"
+                src="https://wrisenergy.org/wp-content/uploads/2019/06/Professional-headshot-square.jpg">
+            <div class="personal-info">
+                <div class="name-location">
+                    <h4>Lelah Nichols</h4>
+                    <div class="location">Troy,MI</div>
+                </div>
+                <div class="interests">
+                    <button class="interest">clothes</button>
+                    <button class="interest">stem</button>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd card -->
+        <div class="card">
+            <img class="circle"
+                src="https://contently.com/wp-content/uploads/2015/06/FA32F3E3-3FC4-4D19-B04F-781625FE1BC0.png">
+            <div class="personal-info">
+                <div class="name-location">
+                    <h4>Jesus Weiss</h4>
+                    <div class="location">Fort Worth, TX</div>
+                </div>
+                <div class="interests">
+                    <button class="interest">headset</button>
+                    <button class="interest">gadget</button>
+                    <button class="interest">spread</button>
+                    <button class="interest">winter</button>
+                </div>
+            </div>
+        </div>
+        <!-- 3rd card -->
+        <div class="card">
+            <img class="circle"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2AVHLZvhe3UPhESDaMqhltKYSbR_rokHKrsfP3oFRntHcVF9pSIaEHHjZa6GteORtPSE&usqp=CAU">
+            <div class="personal-info">
+                <div class="name-location">
+                    <h4>Annie Rice</h4>
+                    <div class="location">Austin, TX</div>
+                </div>
+                <div class="interests">
+                    <button class="interest">road</button>
+                    <button class="interest">mountain</button>
+                    <button class="interest">trip</button>
+                    <button class="interest">earth</button>
+                    <button class="interest">nature</button>
+                </div>
+            </div>
+        </div>
+        <!-- 4th card -->
+        <div class="card">
+            <img class="circle"
+                src="data:image/jpeg;base64,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">
+            <div class="personal-info">
+                <div class="name-location">
+                    <h4>Robert Brower</h4>
+                    <div class="location">Troy,MI</div>
+                </div>
+                <div class="interests">
+                    <button class="interest">Maintenance</button>
+                    <button class="interest">gears</button>
+                    <button class="interest">frames</button>
+                    <button class="interest">repair</button>
+                </div>
+            </div>
+        </div>
+        <!-- 5th card -->
+        <div class="card">
+            <img class="circle"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNK700eFiGBnufl9sxgnwBqyMfSNQsJPBzF9W6FaSwahwRhIWd9X2nWRaAlvGtoTOMiqo&usqp=CAU">
+            <div class="personal-info">
+                <div class="name-location">
+                    <h4>Amy Campbell</h4>
+                    <div class="location">Warrior, AL</div>
+                </div>
+                <div class="interests">
+                    <button class="interest">music</button>
+                    <button class="interest">disks</button>
+                </div>
+            </div>
+        </div>
+        <!-- 6th card -->
+        <div class="card">
+            <img class="circle"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkriIJt4Qm5xhjzVDSxOmHY-8On6ctvS9iBg&usqp=CAU">
+            <div class="personal-info">
+                <div class="name-location">
+                    <h4>Antony S. Morin</h4>
+                    <div class="location">Lyndhurst, NJ</div>
+                </div>
+                <div class="interests">
+                    <button class="interest">vintage</button>
+                    <button class="interest">electric</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
