@@ -1,67 +1,67 @@
-console.log("BT1")
-let x=true;
-let y=true;
-let z=false;
+// console.log("BT1")
+// let x=true;
+// let y=true;
+// let z=false;
 
-console.log(x && y && z) //false
-console.log(x && y && !z) //true
-console.log((x && y) || z ) //true
-console.log((x && y) || !z ) //true
-console.log(x && (y || z) ) //true
-console.log(x && !(y || z) ) //false
-console.log(x && (y || !z) ) //true
-console.log(x && (!y || z) ) //false
+// console.log(x && y && z) //false
+// console.log(x && y && !z) //true
+// console.log((x && y) || z ) //true
+// console.log((x && y) || !z ) //true
+// console.log(x && (y || z) ) //true
+// console.log(x && !(y || z) ) //false
+// console.log(x && (y || !z) ) //true
+// console.log(x && (!y || z) ) //false
 
-// BT2:
-console.log("BT2")
-let name1= 'AAA';
-let age = 20;
-let isGood = true;
+// // BT2:
+// console.log("BT2")
+// let name1= 'AAA';
+// let age = 20;
+// let isGood = true;
 
-console.log(age+10) //30
-console.log(age%3) // 2
-console.log(name1+'BBB') //AAABBB
-console.log(!isGood) //false
-console.log(name1 == 'aaa' && age >= 20) //false
-console.log(name1 != 'aaa' && isGood ) //true
-console.log(!(age < 10) && !isGood) //false
+// console.log(age+10) //30
+// console.log(age%3) // 2
+// console.log(name1+'BBB') //AAABBB
+// console.log(!isGood) //false
+// console.log(name1 == 'aaa' && age >= 20) //false
+// console.log(name1 != 'aaa' && isGood ) //true
+// console.log(!(age < 10) && !isGood) //false
 
-//BT3:
-console.log("BT3")
-let a=10;
-let b=20;
-let c=30;
-let d='40';
+// //BT3:
+// console.log("BT3")
+// let a=10;
+// let b=20;
+// let c=30;
+// let d='40';
 
-console.log(a + b + c) //60
-console.log(a - b / c) // 9.3
-console.log(a - (b * c)) //-590
-console.log(d - (a * b) - c)  //-190
-console.log(a + b + c + d ) //6040
-console.log(d + a + b + c  ) //40102030
-console.log(d + a - b + c  ) //4020
-console.log(a - b + d - c  ) //-1070
-console.log(d - c + a - b  ) //0
-console.log(a * b + d * c ) //1400
+// console.log(a + b + c) //60
+// console.log(a - b / c) // 9.3
+// console.log(a - (b * c)) //-590
+// console.log(d - (a * b) - c)  //-190
+// console.log(a + b + c + d ) //6040
+// console.log(d + a + b + c  ) //40102030
+// console.log(d + a - b + c  ) //4020
+// console.log(a - b + d - c  ) //-1070
+// console.log(d - c + a - b  ) //0
+// console.log(a * b + d * c ) //1400
 
-// BT4:
-console.log("BT4")
-let x = true, y = false, z = 10;
+// // BT4:
+// console.log("BT4")
+// let x = true, y = false, z = 10;
 
-console.log(x && y ) // false
-console.log(x && !y ) //true
-console.log(x && z == 10 ) //true
-console.log((x && z == 10) ) //true
-console.log(!(x && z == 10) ) //false
-console.log(!(x && z == 50) ) //true
+// console.log(x && y ) // false
+// console.log(x && !y ) //true
+// console.log(x && z == 10 ) //true
+// console.log((x && z == 10) ) //true
+// console.log(!(x && z == 10) ) //false
+// console.log(!(x && z == 50) ) //true
 
-console.log(x && y && z == 10 ) //false
-console.log(x && !y && z == 10 ) //true
-console.log(x || y || z == 10 ) //true
-console.log((x && y) || z != 10 ) //false
-console.log(!(x && z == 10) || y ) //false
+// console.log(x && y && z == 10 ) //false
+// console.log(x && !y && z == 10 ) //true
+// console.log(x || y || z == 10 ) //true
+// console.log((x && y) || z != 10 ) //false
+// console.log(!(x && z == 10) || y ) //false
 
-//BT5:
+// //BT5:
 console.log("BT5")
 let a = 1, b = '2', c = 3, d = '4';
 
